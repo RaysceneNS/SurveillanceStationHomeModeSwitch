@@ -1,0 +1,1 @@
+"""The Synology surveillance station home mode component."""
