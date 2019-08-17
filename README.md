@@ -13,8 +13,8 @@ light:
   verify_ssl: false
 ```
 
-* note that you must replace the url/username/password values above with the correct ones for your setup.
+_note that you must replace the url/username/password values above with the correct ones for your setup._
 
 Once these steps are complete, restart your instance of HomeAssistant and you should then have a new switch available for automation.
 
-![capture.png](capture.png)
+![capture.png](/capture.png)
