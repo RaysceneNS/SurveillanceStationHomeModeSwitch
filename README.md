@@ -2,15 +2,15 @@
 
 This component allows you to set the home or away state for Synology Surveillance Station from within HomeAssistant.
 
-To enable this platform in your installation, add the following to your configuration.yaml file:
+To enable this platform in your installation, add the following to the switch section of your configuration.yaml file:
 
 ``` yaml
-light:
+switch:
   - platform: synologysurveillance
-  url: https://192.168.x.x:5001
-  username: secret_username
-  password: secret_password
-  verify_ssl: false
+    url: https://192.168.x.x:5001
+    username: secret_username
+    password: secret_password
+    verify_ssl: false
 ```
 
 _note that you must replace the url/username/password values above with the correct ones for your setup._
