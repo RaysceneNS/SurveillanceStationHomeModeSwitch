@@ -22,6 +22,11 @@ _LOGGING = logging.getLogger(__name__)
 DEFAULT_NAME = "Surveillance Station Home Mode"
 DEFAULT_TIMEOUT = 5
 
+HOME_ICONS = {
+    STATE_ON: "mdi:home-account",
+    STATE_OFF: "mdi:home-outline"
+}
+
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
     {
         vol.Optional(CONF_NAME, default=DEFAULT_NAME): cv.string,
@@ -85,6 +90,11 @@ class SurveillanceStationHomeModeSwitch(ToggleEntity):
     def is_on(self):
         """Return true if device is on."""
         return self._state == STATE_ON
+
+    @property
+    def icon(self):
+        """Icon to use in the frontend, if any."""
+        return HOME_ICONS.get(self.state)
 
     def turn_on(self, **kwargs):
         """Turn the device on."""
