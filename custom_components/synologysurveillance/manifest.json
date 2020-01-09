@@ -3,9 +3,7 @@
     "domain": "synologysurveillance",
     "name": "Synologysurveillance",
     "documentation": "https://www.home-assistant.io/components/",
-    "requirements": [
-      "py-synology==0.3.0"
-    ],
+    "requirements": [],
     "dependencies": [],
     "codeowners": []
   }
