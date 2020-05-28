@@ -24,7 +24,7 @@ import homeassistant.helpers.config_validation as cv
 _LOGGING = logging.getLogger(__name__)
 
 DEFAULT_NAME = "Surveillance Station Home Mode"
-DEFAULT_TIMEOUT = 5
+DEFAULT_TIMEOUT = 10
 
 HOME_ICONS = {
     STATE_ON: "mdi:home-account",
