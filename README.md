@@ -11,6 +11,7 @@ switch:
     username: secret_username
     password: secret_password
     verify_ssl: false
+    timeout: 10
 ```
 
 _note that you must replace the url/username/password values above with the correct ones for your setup._
